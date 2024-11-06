@@ -10,6 +10,8 @@ resource "aws_instance" "tomcat" {
   tags = {
     Name = "${var.prefix}${count.index}"
   }
- }
+  
+#USERDATA in AWS EC2 using Terraform
+  user_data = file("userdata-tomcat.sh") 
 
 }
