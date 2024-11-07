@@ -40,6 +40,7 @@ resource "aws_security_group" "tomcatsg" {
    },
   ]
 /*  tags = {
-  Name = “name_security_group” 
+      Name = “Tomcat-SG” 
+      Environment = "dev"
   } */
 }
